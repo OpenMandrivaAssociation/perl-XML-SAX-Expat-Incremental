@@ -2,7 +2,7 @@
 
 Name:		perl-%{realname}
 Version:    0.04
-Release:    %mkrel 2
+Release:    %mkrel 3
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:    XML::SAX::Expat subclass for non-blocking parsing, with XML::Parser::ExpatNB
