@@ -8,7 +8,7 @@ Release:	5
 Summary:	XML::SAX::Expat subclass for non-blocking parsing
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	perl-devel
