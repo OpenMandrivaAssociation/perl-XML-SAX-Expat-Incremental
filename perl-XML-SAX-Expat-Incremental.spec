@@ -2,14 +2,14 @@
 %define upstream_version 0.05
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	XML::SAX::Expat subclass for non-blocking parsing
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/XML-SAX-Expat-Incremental
+Source0:	https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/XML-SAX-Expat-Incremental-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
