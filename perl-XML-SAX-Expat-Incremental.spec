@@ -1,15 +1,13 @@
 %define upstream_name    XML-SAX-Expat-Incremental
-%define upstream_version 0.05
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.05
+Release:	7
 
 Summary:	XML::SAX::Expat subclass for non-blocking parsing
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/XML-SAX-Expat-Incremental
-Source0:	https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/XML-SAX-Expat-Incremental-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/XML-SAX-Expat-Incremental-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -23,7 +21,7 @@ XML::Parser::ExpatNB .
 
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 # test fails, key verification problem
 rm -f t/dist.t
 
@@ -48,9 +46,7 @@ make test
 
 * Sat Aug 01 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.50.0-1mdv2010.0
 + Revision: 406253
-- rebuild using %%perl_convert_version
-
-* Fri Aug 01 2008 Thierry Vignaud <tv@mandriva.org> 0.05-4mdv2009.0
+- rebuild using %0.05 Fri Aug 01 2008 Thierry Vignaud <tv@mandriva.org> 0.05-4mdv2009.0
 + Revision: 258880
 - rebuild
 
